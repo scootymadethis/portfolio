@@ -27,58 +27,6 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const techButtons = [
-  document.querySelectorAll(".logo.html"),
-  document.querySelectorAll(".logo.css"),
-  document.querySelectorAll(".logo.figma"),
-  document.querySelectorAll(".logo.mongodb"),
-  document.querySelectorAll(".logo.discordjs"),
-  document.querySelectorAll(".logo.python"),
-  document.querySelectorAll(".logo.javascript"),
-  document.querySelectorAll(".logo.nodejs"),
-  document.querySelectorAll(".logo.windows"),
-  document.querySelectorAll(".logo.linux"),
-  document.querySelectorAll(".logo.macos"),
-  document.querySelectorAll(".logo.vscode"),
-  document.querySelectorAll(".logo.cloudflare"),
-  document.querySelectorAll(".logo.porkbun"),
-  document.querySelectorAll(".logo.vercel"),
-  document.querySelectorAll(".logo.git"),
-  document.querySelectorAll(".logo.github"),
-  document.querySelectorAll(".logo.insomnia"),
-  document.querySelectorAll(".logo.npm"),
-];
-
-const techLinks = [
-  "https://developer.mozilla.org/docs/Web/HTML", // HTML
-  "https://developer.mozilla.org/docs/Web/CSS", // CSS
-  "https://www.figma.com/", // Figma
-  "https://www.mongodb.com/", // MongoDB
-  "https://discord.js.org/", // DiscordJS
-  "https://www.python.org/", // Python
-  "https://developer.mozilla.org/docs/Web/JavaScript", // JavaScript
-  "https://nodejs.org/", // NodeJS
-  "https://www.microsoft.com/windows", // Windows
-  "https://www.linux.org/", // Linux
-  "https://www.apple.com/macos/", // MacOS
-  "https://code.visualstudio.com/", // Visual Studio Code
-  "https://www.cloudflare.com/", // Cloudflare
-  "https://porkbun.com/", // Porkbun
-  "https://vercel.com/", // Vercel
-  "https://git-scm.com/", // Git
-  "https://github.com/", // GitHub
-  "https://insomnia.rest/", // Insomnia
-  "https://www.npmjs.com/", // NPM
-];
-
-for (let i = 0; i < techButtons.length; i++) {
-  techButtons[i].forEach((button) => {
-    button.addEventListener("click", function () {
-      window.open(techLinks[i], "_blank");
-    });
-  });
-}
-
 function getDiscordActivity(userID) {
   const contenitori = document.querySelectorAll(".canzone");
 
@@ -274,3 +222,81 @@ document.querySelector(".chi-sono-btn").addEventListener("click", function () {
 document.querySelector(".codice-btn").addEventListener("click", function () {
   window.open("https://github.com/scootymadethis/portfolio", "_blank");
 });
+
+const techButtons = [
+  document.querySelectorAll(".logo.html"),
+  document.querySelectorAll(".logo.css"),
+  document.querySelectorAll(".logo.figma"),
+  document.querySelectorAll(".logo.mongodb"),
+  document.querySelectorAll(".logo.discordjs"),
+  document.querySelectorAll(".logo.python"),
+  document.querySelectorAll(".logo.javascript"),
+  document.querySelectorAll(".logo.nodejs"),
+  document.querySelectorAll(".logo.windows"),
+  document.querySelectorAll(".logo.linux"),
+  document.querySelectorAll(".logo.macos"),
+  document.querySelectorAll(".logo.vscode"),
+  document.querySelectorAll(".logo.cloudflare"),
+  document.querySelectorAll(".logo.porkbun"),
+  document.querySelectorAll(".logo.vercel"),
+  document.querySelectorAll(".logo.git"),
+  document.querySelectorAll(".logo.github"),
+  document.querySelectorAll(".logo.insomnia"),
+  document.querySelectorAll(".logo.npm"),
+];
+
+const techLinks = [
+  "https://developer.mozilla.org/docs/Web/HTML", // HTML
+  "https://developer.mozilla.org/docs/Web/CSS", // CSS
+  "https://www.figma.com/", // Figma
+  "https://www.mongodb.com/", // MongoDB
+  "https://discord.js.org/", // DiscordJS
+  "https://www.python.org/", // Python
+  "https://developer.mozilla.org/docs/Web/JavaScript", // JavaScript
+  "https://nodejs.org/", // NodeJS
+  "https://www.microsoft.com/windows", // Windows
+  "https://www.linux.org/", // Linux
+  "https://www.apple.com/macos/", // MacOS
+  "https://code.visualstudio.com/", // Visual Studio Code
+  "https://www.cloudflare.com/", // Cloudflare
+  "https://porkbun.com/", // Porkbun
+  "https://vercel.com/", // Vercel
+  "https://git-scm.com/", // Git
+  "https://github.com/", // GitHub
+  "https://insomnia.rest/", // Insomnia
+  "https://www.npmjs.com/", // NPM
+];
+
+for (let i = 0; i < techButtons.length; i++) {
+  techButtons[i].forEach((button) => {
+    button.addEventListener("click", function () {
+      window.open(techLinks[i], "_blank");
+    });
+  });
+}
+
+const socialButtons = [
+  document.querySelector(".social.discord"),
+  document.querySelector(".social.instagram"),
+  document.querySelector(".social.github"),
+  document.querySelector(".social.steam"),
+  document.querySelector(".social.spotify"),
+  document.querySelector(".social.youtube"),
+  document.querySelector(".social.email"),
+];
+
+const socialLinks = [
+  "https://discord.com/users/608635403548884992",
+  "https://www.instagram.com/prod.scooty/",
+  "https://github.com/scootymadethis",
+  "https://steamcommunity.com/id/prodscooty/",
+  "https://open.spotify.com/intl-it/artist/0RCAbLUgEEp6sEJH1Prdom?si=Nt5a8VWBT0SNzEKFUJIkVQ",
+  "https://www.youtube.com/@prod.scooty",
+  "mailto:fedescu08@gmail.com",
+];
+
+for (let i = 0; i < socialButtons.length; i++) {
+  socialButtons[i].addEventListener("click", function () {
+    window.open(socialLinks[i], "_blank");
+  });
+}
