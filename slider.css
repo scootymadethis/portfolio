@@ -1,0 +1,53 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 15px 0;
+  white-space: nowrap;
+  position: relative;
+  user-select: none;
+  border-top: 2px solid #303030;
+  border-bottom: 2px solid #303030;
+  margin-top: 20px;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+
+.logos-slide button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: fit-content;
+  margin: 0 5px;
+  background: #262626;
+  border: 1px solid rgb(60, 60, 60);
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: fit-content;
+  transition: background 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.logos-slide button:hover {
+  transition: background 0.2s ease-in-out;
+  background: rgb(60, 60, 60);
+}

@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background: rgb(3, 3, 3);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100%;
+}
+
+/* Mostra il cursore sopra tutto */
+body canvas {
+  z-index: 999;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.gradient {
+  background: linear-gradient(
+    171deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(38, 38, 38, 1) 85%
+  );
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  max-width: 660px;
+  height: 60px;
+  z-index: 999;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar .me {
+  width: 33px;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.75rem, 0.6503rem + 0.3191vw, 0.9375rem);
+  font-weight: 500;
+  padding: 10px 7px 10px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.navbar button:hover {
+  transition: background 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.105);
+}
+
+.navbar .codice-btn {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+/* --------------- PRESENTAZIONE --------------- */
+
+.presentazione {
+  width: 70%;
+  max-width: 820px;
+  height: fit-content;
+  z-index: 10;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  color: white;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.presentazione .titolo {
+  font-size: clamp(2.5rem, 2.0013rem + 1.5957vw, 3.4375rem);
+  font-weight: bolder;
+}
+
+.presentazione .descrizione {
+  font-size: clamp(1.1875rem, 1.0545rem + 0.4255vw, 1.4375rem);
+  display: inline;
+  text-align: middle;
+  margin-top: -10px;
+}
+
+.presentazione .descrizione .descrizione-testo {
+  display: inline;
+}
+
+.presentazione .descrizione .barra {
+  display: inline-block;
+  width: 2px;
+  height: 25px;
+  margin-left: 2px;
+  background: white;
+  vertical-align: bottom;
+  animation: scrittura 1s infinite;
+}
+
+@keyframes scrittura {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.presentazione .socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.presentazione .socials .social {
+  background: none;
+  padding: 8px 9px 8px 9px;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  display: grid;
+  place-items: center;
+}
+
+.presentazione .socials .social:hover {
+  transition: background 0.2s ease-in-out;
+  background: rgb(60, 60, 60);
+}
+
+.presentazione .socials .social svg {
+  width: 30px;
+}
+
+/* --------------- CHI SONO --------------- */
+.chi-sono-text {
+  color: white;
+  font-size: clamp(2.5rem, 2.3338rem + 0.5319vw, 2.8125rem);
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.chi-sono,
+.cosa-uso.mobile,
+.attivita.mobile {
+  width: 70%;
+  max-width: 820px;
+  height: fit-content;
+  z-index: 10;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  color: white;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chi-sono .titolo {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.chi-sono .descrizione {
+  font-size: clamp(1.0625rem, 0.9628rem + 0.3191vw, 1.25rem);
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+.row {
+  display: flex;
+  width: 70%;
+  max-width: 900px;
+  margin: 10px auto 0 auto;
+  gap: 10px;
+}
+
+.cosa-uso,
+.attivita {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 15px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cosa-uso .titolo,
+.attivita .titolo,
+.cosa-uso.mobile .titolo,
+.attivita.mobile .titolo {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.cosa-uso .descrizione,
+.attivita .descrizione,
+.cosa-uso.mobile .descrizione,
+.attivita.mobile .descrizione {
+  font-size: clamp(1.0625rem, 0.9628rem + 0.3191vw, 1.25rem);
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+.canzone {
+  overflow: hidden;
+  padding: 15px 0;
+  position: relative;
+  user-select: none;
+  border-top: 2px solid #303030;
+  border-bottom: 2px solid #303030;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.canzone img {
+  width: 120px;
+  border-radius: 20px;
+  border: 1px solid rgb(60, 60, 60);
+}
+
+.canzone .info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 7px;
+  justify-content: space-evenly;
+}
+
+.canzone .info .titolo-container,
+.canzone .info .artista-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
+  position: relative;
+}
+
+.attivita.mobile .canzone .info .titolo-container,
+.attivita.mobile .canzone .info .artista-container {
+  width: 140px;
+}
+
+.canzone .info .titolo {
+  font-size: clamp(1.375rem, 1.109rem + 0.8511vw, 1.875rem);
+}
+
+.canzone .info .artista {
+  font-size: clamp(0.9375rem, 0.871rem + 0.2128vw, 1.0625rem);
+}
+
+.canzone .info .titolo,
+.canzone .info .artista {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.canzone .info .ascolta {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 7px 10px 7px 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: clamp(0.8125rem, 0.746rem + 0.2128vw, 0.9375rem);
+  display: none;
+}
+
+.canzone .info .ascolta a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  color: #eee;
+  border-top: 1px solid rgb(60, 60, 60);
+  text-align: center;
+  padding: 20px 100px;
+  margin-top: 70px;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(0.8125rem, 0.746rem + 0.2128vw, 0.9375rem);
+}
+
+.footer .footer-content .subtitle {
+  margin-top: 5px;
+  color: rgb(151, 151, 151);
+}
+
+/* ---------- MOBILE ----------- */
+.cosa-uso.mobile,
+.attivita.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body canvas {
+    display: none;
+  }
+
+  .main .row {
+    display: none;
+  }
+
+  .cosa-uso,
+  .attivita {
+    display: none;
+  }
+
+  .cosa-uso.mobile,
+  .attivita.mobile {
+    display: flex;
+  }
+}

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+  </head>
+  <body>
+    <div class="navbar gradient">
+      <img src="assets/me.png" alt="Me" class="me" />
+      <button class="chi-sono-btn">Chi sono</button>
+      <!-- <button class="formazione-btn">Formazione</button> -->
+      <button class="codice-btn">Codice</button>
+    </div>
+
+    <div class="main">
+      <svg class="bg" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="patternGrid"
+            width="50"
+            height="50"
+            patternUnits="userSpaceOnUse"
+            x="-1"
+            y="-1"
+          >
+            <path
+              d="M.5 50V.5H50"
+              fill="none"
+              stroke="rgb(20,20,20)"
+              stroke-width="1"
+            ></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#patternGrid)"></rect>
+      </svg>
+
+      <div class="presentazione gradient">
+        <span class="titolo">Ciao, sono Federico!</span> <br />
+        <span class="descrizione">
+          <span class="descrizione-testo"></span><span class="barra"></span>
+        </span>
+        <div class="socials">
+          <button class="social discord">
+            <svg
+              viewBox="0 -28.5 256 256"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              preserveAspectRatio="xMidYMid"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                    fill="#A3A3A3"
+                    fill-rule="nonzero"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button class="social instagram">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  fill="#A3A3A3"
+                ></path>
+                <path
+                  d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                  fill="#A3A3A3"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                  fill="#A3A3A3"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button class="social github">
+            <svg
+              viewBox="0 0 20 20"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>github [#A3A3A3]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-140.000000, -7559.000000)"
+                    fill="#A3A3A3"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                        id="github-[#A3A3A3]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button class="social steam">
+            <svg
+              fill="#A3A3A3"
+              viewBox="0 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>steam</title>
+                <path
+                  d="M18.102 12.129c0-0 0-0 0-0.001 0-1.564 1.268-2.831 2.831-2.831s2.831 1.268 2.831 2.831c0 1.564-1.267 2.831-2.831 2.831-0 0-0 0-0.001 0h0c-0 0-0 0-0.001 0-1.563 0-2.83-1.267-2.83-2.83 0-0 0-0 0-0.001v0zM24.691 12.135c0-2.081-1.687-3.768-3.768-3.768s-3.768 1.687-3.768 3.768c0 2.081 1.687 3.768 3.768 3.768v0c2.080-0.003 3.765-1.688 3.768-3.767v-0zM10.427 23.76l-1.841-0.762c0.524 1.078 1.611 1.808 2.868 1.808 1.317 0 2.448-0.801 2.93-1.943l0.008-0.021c0.155-0.362 0.246-0.784 0.246-1.226 0-1.757-1.424-3.181-3.181-3.181-0.405 0-0.792 0.076-1.148 0.213l0.022-0.007 1.903 0.787c0.852 0.364 1.439 1.196 1.439 2.164 0 1.296-1.051 2.347-2.347 2.347-0.324 0-0.632-0.066-0.913-0.184l0.015 0.006zM15.974 1.004c-7.857 0.001-14.301 6.046-14.938 13.738l-0.004 0.054 8.038 3.322c0.668-0.462 1.495-0.737 2.387-0.737 0.001 0 0.002 0 0.002 0h-0c0.079 0 0.156 0.005 0.235 0.008l3.575-5.176v-0.074c0.003-3.12 2.533-5.648 5.653-5.648 3.122 0 5.653 2.531 5.653 5.653s-2.531 5.653-5.653 5.653h-0.131l-5.094 3.638c0 0.065 0.005 0.131 0.005 0.199 0 0.001 0 0.002 0 0.003 0 2.342-1.899 4.241-4.241 4.241-2.047 0-3.756-1.451-4.153-3.38l-0.005-0.027-5.755-2.383c1.841 6.345 7.601 10.905 14.425 10.905 8.281 0 14.994-6.713 14.994-14.994s-6.713-14.994-14.994-14.994c-0 0-0.001 0-0.001 0h0z"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button class="social spotify">
+            <svg
+              viewBox="0 0 20 20"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>spotify [#A3A3A3]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-140.000000, -7479.000000)"
+                    fill="#A3A3A3"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M99.915,7327.865 C96.692,7325.951 91.375,7325.775 88.297,7326.709 C87.803,7326.858 87.281,7326.58 87.131,7326.085 C86.981,7325.591 87.26,7325.069 87.754,7324.919 C91.287,7323.846 97.159,7324.053 100.87,7326.256 C101.314,7326.52 101.46,7327.094 101.196,7327.538 C100.934,7327.982 100.358,7328.129 99.915,7327.865 L99.915,7327.865 Z M99.81,7330.7 C99.584,7331.067 99.104,7331.182 98.737,7330.957 C96.05,7329.305 91.952,7328.827 88.773,7329.792 C88.36,7329.916 87.925,7329.684 87.8,7329.272 C87.676,7328.86 87.908,7328.425 88.32,7328.3 C91.951,7327.198 96.466,7327.732 99.553,7329.629 C99.92,7329.854 100.035,7330.334 99.81,7330.7 L99.81,7330.7 Z M98.586,7333.423 C98.406,7333.717 98.023,7333.81 97.729,7333.63 C95.381,7332.195 92.425,7331.871 88.944,7332.666 C88.609,7332.743 88.274,7332.533 88.198,7332.197 C88.121,7331.862 88.33,7331.528 88.667,7331.451 C92.476,7330.58 95.743,7330.955 98.379,7332.566 C98.673,7332.746 98.766,7333.129 98.586,7333.423 L98.586,7333.423 Z M94,7319 C88.477,7319 84,7323.477 84,7329 C84,7334.523 88.477,7339 94,7339 C99.523,7339 104,7334.523 104,7329 C104,7323.478 99.523,7319.001 94,7319.001 L94,7319 Z"
+                        id="spotify-[#A3A3A3]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button class="social youtube">
+            <svg
+              viewBox="0 -3 20 20"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>youtube [#A3A3A3]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-300.000000, -7442.000000)"
+                    fill="#A3A3A3"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                        id="youtube-[#A3A3A3]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button class="social email">
+            <svg
+              version="1.1"
+              id="_x32_"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <style type="text/css">
+                  .st0 {
+                    fill: #a3a3a3;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M66.734,401.582c-5.902,0-11.421-1.551-16.135-4.277l139.049-121.182l12.979,11.294 c10.863,9.44,24.46,14.22,37.93,14.22c13.536,0,27.133-4.78,37.996-14.22l12.973-11.294l47.074,41.038 c5.324-8.971,11.939-17.054,19.613-24.038l-43.093-37.547L446.977,140.54v127.084c12.26,2.236,23.756,6.62,34.136,12.75V124.834 c0-4.404-0.43-8.762-1.236-12.979c-2.175-10.925-7.016-20.922-13.778-29.181c-1.43-1.8-2.921-3.411-4.54-5.022 c-11.978-12.046-28.804-19.56-47.182-19.56H66.734c-18.377,0-35.136,7.514-47.182,19.56c-1.612,1.611-3.102,3.222-4.532,5.022 c-6.768,8.259-11.609,18.256-13.717,29.181C0.43,116.072,0,120.43,0,124.834v244.162c0,9.367,1.987,18.371,5.526,26.502 c3.283,7.762,8.131,14.785,14.026,20.673c1.491,1.491,2.981,2.86,4.593,4.224c11.549,9.561,26.454,15.336,42.589,15.336h280.481 c-8.118-10.032-14.436-21.567-18.412-34.15H66.734z M43.697,101.797c5.962-5.956,13.973-9.561,23.037-9.561h347.645 c9.065,0,17.142,3.606,23.037,9.561c1.047,1.061,2.042,2.243,2.921,3.418L258.128,264.017c-5.029,4.405-11.24,6.581-17.571,6.581 c-6.271,0-12.476-2.176-17.572-6.581L40.85,105.148C41.656,103.973,42.65,102.858,43.697,101.797z M34.136,368.997V140.479 L166,255.51L34.203,370.42C34.136,369.984,34.136,369.494,34.136,368.997z"
+                  ></path>
+                  <path
+                    class="st0"
+                    d="M428.285,286.484c-46.235,0-83.702,37.48-83.702,83.715c0,46.228,37.467,83.708,83.702,83.708 c46.242,0,83.715-37.48,83.715-83.708C512,323.963,474.527,286.484,428.285,286.484z M441.23,410.236h-20.331v-56.421h-0.242 l-14.744,6.963l-3.076-17.82l20.654-9.441h17.74V410.236z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <p class="chi-sono-text">Chi sono</p>
+      <div class="chi-sono gradient">
+        <span class="titolo">Generale</span>
+        <span class="descrizione"
+          >Ho iniziato a programmare siti web all'età di 13 anni, e questo è
+          stato il mio primo approccio al mondo della programmazione. Ho poi
+          continuato a perfezionare le mie abilità, per poi ampliare le mie
+          conoscenze spostami anche sullo sviluppo software iniziando con lo
+          sviluppo in Python, per poi spostarmi su Java e linguaggi più
+          complessi.</span
+        >
+      </div>
+      <div class="row">
+        <div class="cosa-uso gradient">
+          <span class="titolo">Tecnologie</span>
+          <span class="descrizione"
+            >Per quanto riguarda lo sviluppo, utilizzo una varietà di
+            tecnologie.</span
+          >
+
+          <div class="logos">
+            <div class="logos-slide">
+              <button class="logo html">
+                <img src="assets/tecnologie/html.svg" alt="HTML" width="20" />
+                HTML
+              </button>
+              <button class="logo css">
+                <img src="assets/tecnologie/css.svg" alt="CSS" width="20" />
+                CSS
+              </button>
+              <button class="logo figma">
+                <img src="assets/tecnologie/figma.svg" alt="Figma" width="20" />
+                Figma
+              </button>
+              <button class="logo mongodb">
+                <img
+                  src="assets/tecnologie/mongodb.svg"
+                  alt="MongoDB"
+                  width="20"
+                />
+                MongoDB
+              </button>
+              <button class="logo discordjs">
+                <img
+                  src="assets/tecnologie/discordjs.svg"
+                  alt="DiscordJS"
+                  width="20"
+                />
+                DiscordJS
+              </button>
+              <button class="logo python">
+                <img
+                  src="assets/tecnologie/python.svg"
+                  alt="Python"
+                  width="20"
+                />
+                Python
+              </button>
+              <button class="logo javascript">
+                <img
+                  src="assets/tecnologie/javascript.svg"
+                  alt="JavaScript"
+                  width="20"
+                />
+                JavaScript
+              </button>
+              <button class="logo nodejs">
+                <img
+                  src="assets/tecnologie/nodejs.svg"
+                  alt="NodeJS"
+                  width="20"
+                />
+                NodeJS
+              </button>
+              <button class="logo windows">
+                <img
+                  src="assets/tecnologie/windows.svg"
+                  alt="Windows"
+                  width="20"
+                />
+                Windows
+              </button>
+              <button class="logo linux">
+                <img src="assets/tecnologie/linux.svg" alt="Linux" width="20" />
+                Linux
+              </button>
+              <button class="logo macos">
+                <img src="assets/tecnologie/macos.svg" alt="MacOS" width="20" />
+                MacOS
+              </button>
+              <button class="logo vscode">
+                <img
+                  src="assets/tecnologie/vscode.svg"
+                  alt="Visual Studio Code"
+                  width="20"
+                />
+                Visual Studio Code
+              </button>
+              <button class="logo cloudflare">
+                <img
+                  src="assets/tecnologie/cloudflare.svg"
+                  alt="Cloudflare"
+                  width="20"
+                />
+                Cloudflare
+              </button>
+              <button class="logo porkbun">
+                <img
+                  src="assets/tecnologie/porkbun.svg"
+                  alt="Porkbun"
+                  width="20"
+                />
+                Porkbun
+              </button>
+              <button class="logo vercel">
+                <img
+                  src="assets/tecnologie/vercel.svg"
+                  alt="Vercel"
+                  width="20"
+                />
+                Vercel
+              </button>
+              <button class="logo git">
+                <img src="assets/tecnologie/git.svg" alt="Git" width="20" />
+                Git
+              </button>
+              <button class="logo github">
+                <img
+                  src="assets/tecnologie/github.svg"
+                  alt="GitHub"
+                  width="20"
+                />
+                GitHub
+              </button>
+              <button class="logo insomnia">
+                <img
+                  src="assets/tecnologie/insomnia.svg"
+                  alt="Insomnia"
+                  width="20"
+                />
+                Insomnia
+              </button>
+              <button class="logo npm">
+                <img src="assets/tecnologie/npm.svg" alt="NPM" width="20" />
+                NPM
+              </button>
+            </div>
+
+            <div class="logos-slide">
+              <button class="logo html">
+                <img src="assets/tecnologie/html.svg" alt="HTML" width="20" />
+                HTML
+              </button>
+              <button class="logo css">
+                <img src="assets/tecnologie/css.svg" alt="CSS" width="20" />
+                CSS
+              </button>
+              <button class="logo figma">
+                <img src="assets/tecnologie/figma.svg" alt="Figma" width="20" />
+                Figma
+              </button>
+              <button class="logo mongodb">
+                <img
+                  src="assets/tecnologie/mongodb.svg"
+                  alt="MongoDB"
+                  width="20"
+                />
+                MongoDB
+              </button>
+              <button class="logo discordjs">
+                <img
+                  src="assets/tecnologie/discordjs.svg"
+                  alt="DiscordJS"
+                  width="20"
+                />
+                DiscordJS
+              </button>
+              <button class="logo python">
+                <img
+                  src="assets/tecnologie/python.svg"
+                  alt="Python"
+                  width="20"
+                />
+                Python
+              </button>
+              <button class="logo javascript">
+                <img
+                  src="assets/tecnologie/javascript.svg"
+                  alt="JavaScript"
+                  width="20"
+                />
+                JavaScript
+              </button>
+              <button class="logo nodejs">
+                <img
+                  src="assets/tecnologie/nodejs.svg"
+                  alt="NodeJS"
+                  width="20"
+                />
+                NodeJS
+              </button>
+              <button class="logo windows">
+                <img
+                  src="assets/tecnologie/windows.svg"
+                  alt="Windows"
+                  width="20"
+                />
+                Windows
+              </button>
+              <button class="logo linux">
+                <img src="assets/tecnologie/linux.svg" alt="Linux" width="20" />
+                Linux
+              </button>
+              <button class="logo macos">
+                <img src="assets/tecnologie/macos.svg" alt="MacOS" width="20" />
+                MacOS
+              </button>
+              <button class="logo vscode">
+                <img
+                  src="assets/tecnologie/vscode.svg"
+                  alt="Visual Studio Code"
+                  width="20"
+                />
+                Visual Studio Code
+              </button>
+              <button class="logo cloudflare">
+                <img
+                  src="assets/tecnologie/cloudflare.svg"
+                  alt="Cloudflare"
+                  width="20"
+                />
+                Cloudflare
+              </button>
+              <button class="logo porkbun">
+                <img
+                  src="assets/tecnologie/porkbun.svg"
+                  alt="Porkbun"
+                  width="20"
+                />
+                Porkbun
+              </button>
+              <button class="logo vercel">
+                <img
+                  src="assets/tecnologie/vercel.svg"
+                  alt="Vercel"
+                  width="20"
+                />
+                Vercel
+              </button>
+              <button class="logo git">
+                <img src="assets/tecnologie/git.svg" alt="Git" width="20" />
+                Git
+              </button>
+              <button class="logo github">
+                <img
+                  src="assets/tecnologie/github.svg"
+                  alt="GitHub"
+                  width="20"
+                />
+                GitHub
+              </button>
+              <button class="logo insomnia">
+                <img
+                  src="assets/tecnologie/insomnia.svg"
+                  alt="Insomnia"
+                  width="20"
+                />
+                Insomnia
+              </button>
+              <button class="logo npm">
+                <img src="assets/tecnologie/npm.svg" alt="NPM" width="20" />
+                NPM
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="attivita gradient">
+          <span class="titolo">Musica</span>
+          <span class="descrizione"
+            >Al momento sto ascoltando questa canzone:</span
+          >
+          <div class="canzone">
+            <img
+              src="assets/nosong.png"
+              alt="Copertina Canzone"
+              class="cover"
+            />
+            <div class="info">
+              <div class="titolo-container">
+                <span class="titolo">Niente</span>
+              </div>
+              <div class="artista-container">
+                <span class="artista">Nessuno</span>
+              </div>
+              <button class="ascolta"><a href="">Ascolta su Spotify</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cosa-uso mobile gradient">
+        <span class="titolo">Tecnologie</span>
+        <span class="descrizione"
+          >Per quanto riguarda lo sviluppo, utilizzo una varietà di
+          tecnologie.</span
+        >
+
+        <div class="logos">
+          <div class="logos-slide">
+            <button class="logo html">
+              <img src="assets/tecnologie/html.svg" alt="HTML" width="20" />
+              HTML
+            </button>
+            <button class="logo css">
+              <img src="assets/tecnologie/css.svg" alt="CSS" width="20" />
+              CSS
+            </button>
+            <button class="logo figma">
+              <img src="assets/tecnologie/figma.svg" alt="Figma" width="20" />
+              Figma
+            </button>
+            <button class="logo mongodb">
+              <img
+                src="assets/tecnologie/mongodb.svg"
+                alt="MongoDB"
+                width="20"
+              />
+              MongoDB
+            </button>
+            <button class="logo discordjs">
+              <img
+                src="assets/tecnologie/discordjs.svg"
+                alt="DiscordJS"
+                width="20"
+              />
+              DiscordJS
+            </button>
+            <button class="logo python">
+              <img src="assets/tecnologie/python.svg" alt="Python" width="20" />
+              Python
+            </button>
+            <button class="logo javascript">
+              <img
+                src="assets/tecnologie/javascript.svg"
+                alt="JavaScript"
+                width="20"
+              />
+              JavaScript
+            </button>
+            <button class="logo nodejs">
+              <img src="assets/tecnologie/nodejs.svg" alt="NodeJS" width="20" />
+              NodeJS
+            </button>
+            <button class="logo windows">
+              <img
+                src="assets/tecnologie/windows.svg"
+                alt="Windows"
+                width="20"
+              />
+              Windows
+            </button>
+            <button class="logo linux">
+              <img src="assets/tecnologie/linux.svg" alt="Linux" width="20" />
+              Linux
+            </button>
+            <button class="logo macos">
+              <img src="assets/tecnologie/macos.svg" alt="MacOS" width="20" />
+              MacOS
+            </button>
+            <button class="logo vscode">
+              <img
+                src="assets/tecnologie/vscode.svg"
+                alt="Visual Studio Code"
+                width="20"
+              />
+              Visual Studio Code
+            </button>
+            <button class="logo cloudflare">
+              <img
+                src="assets/tecnologie/cloudflare.svg"
+                alt="Cloudflare"
+                width="20"
+              />
+              Cloudflare
+            </button>
+            <button class="logo porkbun">
+              <img
+                src="assets/tecnologie/porkbun.svg"
+                alt="Porkbun"
+                width="20"
+              />
+              Porkbun
+            </button>
+            <button class="logo vercel">
+              <img src="assets/tecnologie/vercel.svg" alt="Vercel" width="20" />
+              Vercel
+            </button>
+            <button class="logo git">
+              <img src="assets/tecnologie/git.svg" alt="Git" width="20" />
+              Git
+            </button>
+            <button class="logo github">
+              <img src="assets/tecnologie/github.svg" alt="GitHub" width="20" />
+              GitHub
+            </button>
+            <button class="logo insomnia">
+              <img
+                src="assets/tecnologie/insomnia.svg"
+                alt="Insomnia"
+                width="20"
+              />
+              Insomnia
+            </button>
+            <button class="logo npm">
+              <img src="assets/tecnologie/npm.svg" alt="NPM" width="20" />
+              NPM
+            </button>
+          </div>
+
+          <div class="logos-slide">
+            <button class="logo html">
+              <img src="assets/tecnologie/html.svg" alt="HTML" width="20" />
+              HTML
+            </button>
+            <button class="logo css">
+              <img src="assets/tecnologie/css.svg" alt="CSS" width="20" />
+              CSS
+            </button>
+            <button class="logo figma">
+              <img src="assets/tecnologie/figma.svg" alt="Figma" width="20" />
+              Figma
+            </button>
+            <button class="logo mongodb">
+              <img
+                src="assets/tecnologie/mongodb.svg"
+                alt="MongoDB"
+                width="20"
+              />
+              MongoDB
+            </button>
+            <button class="logo discordjs">
+              <img
+                src="assets/tecnologie/discordjs.svg"
+                alt="DiscordJS"
+                width="20"
+              />
+              DiscordJS
+            </button>
+            <button class="logo python">
+              <img src="assets/tecnologie/python.svg" alt="Python" width="20" />
+              Python
+            </button>
+            <button class="logo javascript">
+              <img
+                src="assets/tecnologie/javascript.svg"
+                alt="JavaScript"
+                width="20"
+              />
+              JavaScript
+            </button>
+            <button class="logo nodejs">
+              <img src="assets/tecnologie/nodejs.svg" alt="NodeJS" width="20" />
+              NodeJS
+            </button>
+            <button class="logo windows">
+              <img
+                src="assets/tecnologie/windows.svg"
+                alt="Windows"
+                width="20"
+              />
+              Windows
+            </button>
+            <button class="logo linux">
+              <img src="assets/tecnologie/linux.svg" alt="Linux" width="20" />
+              Linux
+            </button>
+            <button class="logo macos">
+              <img src="assets/tecnologie/macos.svg" alt="MacOS" width="20" />
+              MacOS
+            </button>
+            <button class="logo vscode">
+              <img
+                src="assets/tecnologie/vscode.svg"
+                alt="Visual Studio Code"
+                width="20"
+              />
+              Visual Studio Code
+            </button>
+            <button class="logo cloudflare">
+              <img
+                src="assets/tecnologie/cloudflare.svg"
+                alt="Cloudflare"
+                width="20"
+              />
+              Cloudflare
+            </button>
+            <button class="logo porkbun">
+              <img
+                src="assets/tecnologie/porkbun.svg"
+                alt="Porkbun"
+                width="20"
+              />
+              Porkbun
+            </button>
+            <button class="logo vercel">
+              <img src="assets/tecnologie/vercel.svg" alt="Vercel" width="20" />
+              Vercel
+            </button>
+            <button class="logo git">
+              <img src="assets/tecnologie/git.svg" alt="Git" width="20" />
+              Git
+            </button>
+            <button class="logo github">
+              <img src="assets/tecnologie/github.svg" alt="GitHub" width="20" />
+              GitHub
+            </button>
+            <button class="logo insomnia">
+              <img
+                src="assets/tecnologie/insomnia.svg"
+                alt="Insomnia"
+                width="20"
+              />
+              Insomnia
+            </button>
+            <button class="logo npm">
+              <img src="assets/tecnologie/npm.svg" alt="NPM" width="20" />
+              NPM
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="attivita mobile gradient">
+        <span class="titolo">Musica</span>
+        <span class="descrizione"
+          >Al momento sto ascoltando questa canzone:</span
+        >
+        <div class="canzone">
+          <img src="assets/nosong.png" alt="Copertina Canzone" class="cover" />
+          <div class="info">
+            <div class="titolo-container">
+              <span class="titolo">Niente</span>
+            </div>
+            <div class="artista-container">
+              <span class="artista">Nessuno</span>
+            </div>
+            <button class="ascolta">
+              <a href="">Ascolta su <br />Spotify</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-content">
+          <p>FedericoScutariu.dev - Fatto con HTML, CSS, JavaScript e ❤ da me</p>
+          <p class="subtitle">Ultimo aggiornamento: 15/07/2025</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  <script src="main.js"></script>
+</html>
