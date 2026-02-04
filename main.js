@@ -2,7 +2,7 @@ window.addEventListener("load", (event) => {
   new cursoreffects.ghostCursor();
 
   animazioneDescrizione();
-  getDiscordActivity("608635403548884992");
+  getDiscordActivity("552780342730424331");
 });
 
 async function animazioneDescrizione() {
